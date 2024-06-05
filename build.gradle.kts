@@ -29,6 +29,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-graphql-starter")
 	compileOnly("org.projectlombok:lombok")
+	implementation("org.modelmapper:modelmapper:2.1.1")
+	implementation("me.paulschwarz:spring-dotenv:3.0.0")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")

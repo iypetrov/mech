@@ -1,0 +1,13 @@
+spring:
+  application:
+    name:
+      mech
+  data:
+    mongodb:
+      auto-index-creation: true
+      database: mech
+      uri: ${MONGO_URI}
+dgs:
+  graphql:
+    schema-locations:
+      - classpath*:schema/**/*.graphql*

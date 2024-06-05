@@ -1,0 +1,26 @@
+type Query {
+    cars(brandFilter: String): [Car]
+}
+
+type Car {
+    id: String
+    brand: String
+    year: Int
+}
+
+type Mutation {
+    createCar(request: RequestCreateCar!): Car
+    updateCar(request: RequestUpdateCar!): Car
+    deleteCar(id: String!): String
+}
+
+input RequestCreateCar {
+    brand: String
+    year: Int
+}
+
+input RequestUpdateCar {
+    id: String!
+    brand: String
+    year: Int
+}
